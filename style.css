@@ -1,0 +1,222 @@
+* {
+  font-family: "Nunito";
+  letter-spacing: -0.8px;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+}
+
+nav {
+  background-color: rgb(11, 65, 214);
+  padding: 20px 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+
+  div {
+    display: flex;
+    gap: 10px;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  i {
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+}
+
+main {
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome {
+  margin-top: 5vh;
+
+  h1 {
+    font-size: 18px;
+    color: rgb(128, 128, 128);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 18px;
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+  }
+}
+
+#contract {
+  margin-top: 3vh;
+  background-color: white;
+  padding: 1.5em 1em;
+  border-radius: 10px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+  }
+
+  p {
+    font-size: 13px;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+  }
+}
+
+#updates {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1em 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  h1 {
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+  }
+}
+
+.section-header {
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+#quick-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card {
+  width: 20px;
+  background-color: rgb(236, 236, 236);
+  width: 100px;
+  padding: 1.2em 1em;
+  border-radius: 20px;
+
+  p {
+    font-size: 12px;
+  }
+
+  i {
+    margin-bottom: 5px;
+    color: #494949;
+  }
+}
+
+#invoices {
+  margin-bottom: 3vh;
+  p {
+    margin-top: 1em;
+    margin-left: 1.5em;
+    font-size: 14px;
+    margin-bottom: 1em;
+  }
+}
+
+.invoice-card {
+  background-color: white;
+  padding: 1em;
+  border: 0.1px solid rgb(219, 219, 219);
+  border-radius: 15px;
+}
+
+.invoice-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  padding: 1em;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+
+  .status {
+    background-color: rgb(230, 117, 117);
+    color: white;
+    padding: 0.2em 0.8em;
+    border-radius: 8px;
+    font-size: 12px;
+    width: fit-content;
+    text-align: center;
+  }
+
+  #due-date {
+    font-size: 12px;
+    color: rgb(119, 118, 118);
+    font-weight: bold;
+  }
+}
+
+.pay-button {
+  background-color: rgb(157, 200, 240);
+  color: rgb(36, 36, 36);
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0b0bb9;
+  height: 70px;
+  padding: 0 10px;
+}
+
+.nav-item {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5em;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item.active {
+  color: #fff;
+  background-color: #5d85ee;
+  border-radius: 12px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 45px;
+  height: 45px;
+  font-size: 1.3em;
+}
+
+.nav-item:not(.active):hover {
+  color: #fff;
+}
+
+.nav-item i {
+  display: block;
+}
