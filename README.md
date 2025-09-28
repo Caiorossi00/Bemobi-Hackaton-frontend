@@ -37,3 +37,11 @@ O backend do projeto **Bê da Bemobi** é responsável por fornecer os dados, re
   - `/contas` → retorna a lista de contas  
   - `/analise` → retorna insights financeiros e sugestões de corte
 - Possível evolução: integração com banco de dados real (SQL/NoSQL) e uso de Machine Learning/IA para análises inteligentes
+
+
+## Acesse o Projeto
+
+Você pode visualizar a aplicação em funcionamento através do seguinte link:
+
+[Deploy](https://caiorossi00.github.io/Bemobi-Hackaton-frontend/)
+
