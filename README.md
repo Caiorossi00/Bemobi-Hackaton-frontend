@@ -45,5 +45,7 @@ Você pode visualizar a aplicação em funcionamento através do seguinte link:
 
 [Deploy](https://caiorossi00.github.io/Bemobi-Hackaton-frontend/)
 
-<img src="https://github.com/Caiorossi00/Bemobi-Hackaton-frontend/blob/main/UI.png?raw=true" alt="Frontend Preview" width="600"/>
+<p align="center">
+  <img src="https://github.com/Caiorossi00/Bemobi-Hackaton-frontend/blob/main/UI.png?raw=true" alt="Frontend Preview" width="600"/>
+</p>
 
