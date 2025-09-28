@@ -266,14 +266,14 @@ main {
 
 #be-insights .dropdown-content li {
   background: rgb(243, 243, 243);
-  margin: 5px 0;
+  margin: 5px 10%;
   padding: 1em;
   border-radius: 8px;
   font-size: 14px;
   color: rgb(54, 54, 54);
   font-weight: 500;
   border-left: 4px solid #0b41d6;
-  width: 100%;
+  width: 95%;
 }
 
 #be-insights .dropdown-content a {
