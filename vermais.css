@@ -1,0 +1,52 @@
+#top-be-section {
+  margin-top: 5vh;
+  text-align: center;
+
+  h1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .be-infos {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    gap: 5px;
+
+    p {
+      width: 80%;
+      text-align: left;
+      color: rgb(78, 78, 78);
+      font-weight: 600;
+    }
+
+    img {
+      width: 90px;
+    }
+  }
+}
+
+#be-mid-section {
+  margin-bottom: 4vh;
+}
+
+.daily-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 3vh;
+
+  h1 {
+    font-weight: bold;
+    font-size: 1em;
+  }
+}
+
+.day-card {
+  display: flex;
+  gap: 10px;
+  background-color: rgb(236, 236, 236);
+  padding: 1em;
+  border-radius: 10px;
+}
