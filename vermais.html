@@ -13,6 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia-genial-analisa.genialinvestimentos.com.br%2Fwp-content%2Fuploads%2F2021%2F03%2F07182742%2FBEMOBI-41.png&f=1&nofb=1&ipt=a695825eca889766b121639833a001963327f6daedc491ac35c941161eec3977"
+      type="image/png"
+    />
+
     <script
       src="https://kit.fontawesome.com/d3fb1e03fb.js"
       crossorigin="anonymous"
@@ -47,72 +53,11 @@
 
       <section id="be-mid-section">
         <div class="daily-tips">
-          <h1>Hoje</h1>
+          <h1>Sugestões da Bê</h1>
 
-          <div class="day-card">
-            <i class="fa-solid fa-bolt"></i>
-            <p>
-              Sua conta de energia vence amanhã e o saldo não cobre totalmente.
-              Que tal transferir agora?
-            </p>
-          </div>
+          <p id="mensagem"></p>
 
-          <div class="day-card">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            <p>
-              Fique de olho: há risco de débito recusado na próxima cobrança!
-            </p>
-          </div>
-        </div>
-
-        <div class="daily-tips">
-          <h1>Há 3 dias</h1>
-
-          <div class="day-card">
-            <i class="fa-solid fa-dumbbell"></i>
-            <p>Que tal cortar a academia (R$ 90) esse mês?</p>
-          </div>
-
-          <div class="day-card">
-            <i class="fa-solid fa-film"></i>
-            <p>
-              Previsão de instabilidade: pode faltar R$ 20 para o pagamento da
-              Netflix nesta semana.
-            </p>
-          </div>
-
-          <div class="day-card">
-            <i class="fa-solid fa-droplet"></i>
-            <p>
-              Sua conta de água de <strong>R$ 85</strong> vence em 2 dias. Seu
-              saldo já cobre, pode pagar sem preocupações!
-            </p>
-          </div>
-
-          <div class="day-card">
-            <i class="fa-solid fa-bus"></i>
-            <p>
-              Nos últimos 7 dias, você gastou <strong>R$ 60</strong> a mais com
-              transporte. Vale a pena ajustar essa rota?
-            </p>
-          </div>
-
-          <div class="day-card">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <p>
-              O gasto no mercado subiu 15% este mês. Quer que eu sugira onde
-              cortar para equilibrar?
-            </p>
-          </div>
-
-          <div class="day-card">
-            <i class="fa-solid fa-credit-card"></i>
-            <p>
-              Seu cartão vence em 5 dias com fatura de
-              <strong>R$ 900</strong>, mas o saldo atual é
-              <strong>R$ 700</strong>. Precisa de um plano?
-            </p>
-          </div>
+          <div id="insights-list" class="collapsed"></div>
         </div>
       </section>
     </main>
