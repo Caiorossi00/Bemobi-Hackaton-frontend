@@ -9,77 +9,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia-genial-analisa.genialinvestimentos.com.br%2Fwp-content%2Fuploads%2F2021%2F03%2F07182742%2FBEMOBI-41.png&f=1&nofb=1&ipt=a695825eca889766b121639833a001963327f6daedc491ac35c941161eec3977"
-      type="image/png"
-    />
+   <link rel="shortcut icon" href="assets/images/icon.jpeg" type="image/jpeg">
 
     <script
       src="https://kit.fontawesome.com/d3fb1e03fb.js"
       crossorigin="anonymous"
     ></script>
-    <title>Bemobi</title>
+    <title>Assistência da Bê</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <div>
-            <img src="./assets/images/logo.png" alt="Logo" />
-          </div>
-          <i class="fa-solid fa-right-from-bracket"></i>
-        </ul>
+
+    <header id="be-header">
+      <nav class="vermais-nav">
+        <a href="index.html" class="back-button">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <h1>Assistência da Bê</h1>
       </nav>
     </header>
 
+  
     <main>
       <section id="top-be-section">
-        <div>
-          <h1>Assistência da Bê</h1>
-          <div class="be-infos">
-            <img src="./assets/images/avatar.png" alt="Bê avatar" />
-            <p>
-              Oi, eu sou a Bê 👋 . Aqui eu te ajudo a prever seus gastos e
-              evitar surpresas.
-            </p>
-          </div>
+        <div class="welcome-card card">
+            <div class="welcome-text">
+                <h1>Oi, Caio!</h1>
+                <h2>Vamos pra análise dessa semana?</h2>
+            </div>
+            <img src="assets/images/avatar2.png" alt="Bê avatar" class="be-avatar-img-large" />
         </div>
       </section>
 
-      <section id="be-mid-section">
-        <div class="daily-tips">
-          <h1>Sugestões da Bê</h1>
-
-          <p id="mensagem"></p>
-
-          <div id="insights-list" class="collapsed"></div>
+      <section id="suggestions-section">
+    
+        <div id="insights-list-expanded" class="suggestions-container-expanded">
+       
+            <div class="expanded-bubble">
+                Sua conta de energia vence amanhã e o saldo não cobre totalmente. Que tal transferir agora?
+            </div>
+          
+            <div class="expanded-bubble">
+                Fique de olho: há risco de débito recusado na próxima cobrança!
+            </div>
+           
+            <div class="expanded-bubble">
+                Que tal cortar a academia (R$90) esse mês?
+            </div>
+           
+            <div class="expanded-bubble">
+                Previsão de instabilidade: pode faltar R$20 para o pagamento da Netflix nesta semana.
+            </div>
+          
+            <div class="expanded-bubble">
+                Sua conta de energia vence amanhã e o saldo não cobre totalmente. Que tal transferir agora?
+            </div>
+            
         </div>
       </section>
-    </main>
 
-    <footer>
-      <nav class="footer-nav">
+
+         <nav id="mobile-footer-nav">
         <a href="#" class="nav-item active">
-          <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-house"></i>
         </a>
-
         <a href="#" class="nav-item">
-          <i class="fa-solid fa-file-invoice-dollar"></i>
+            <i class="fa-solid fa-file-invoice-dollar"></i>
         </a>
-
         <a href="#" class="nav-item">
-          <i class="fa-solid fa-headphones"></i>
+            <i class="fa-solid fa-headphones"></i>
         </a>
-
         <a href="#" class="nav-item">
-          <i class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-ellipsis"></i>
         </a>
-      </nav>
-    </footer>
+    </nav>
+  
     <script src="script.js"></script>
   </body>
 </html>
