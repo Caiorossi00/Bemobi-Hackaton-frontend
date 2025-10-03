@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="icon"
-      href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia-genial-analisa.genialinvestimentos.com.br%2Fwp-content%2Fuploads%2F2021%2F03%2F07182742%2FBEMOBI-41.png&f=1&nofb=1&ipt=a695825eca889766b121639833a001963327f6daedc491ac35c941161eec3977"
+      href="assets/images/icon.jpeg"
       type="image/png"
     />
 
@@ -24,107 +24,101 @@
     <title>Bemobi</title>
   </head>
   <body>
-    <header>
+
       <nav>
         <ul>
-          <div>
-            <img src="./assets/images/logo.png" alt="Logo" />
+          <div class="menu">
+            <img src="./assets/images/logo.png" alt="Logo"  id="logo-bemobi"/>
           </div>
           <i class="fa-solid fa-right-from-bracket"></i>
         </ul>
       </nav>
     </header>
 
+
+   
     <main>
       <section id="top-section">
         <div id="welcome">
-          <h1>Seja bem-vindo(a),</h1>
-          <p>Descomplica Team</p>
+          <h1>Seja bem vindo,</h1>
+          <p class="name-highlight">Caio!</p>
         </div>
 
-        <div id="contract">
+        <h2 class="section-title"> Meu Saldo</h2>
+       
+        <div id="saldo-card" class="card collapsible-card">
+        <button class="card-header-button" onclick="toggleSection('saldo-content' , 'saldo-arrow') "> 
+         <div class="flex-between w-full">
+          <span class="status-badge">Saldo disponível</span>
+          <i id="saldo-arrow" class="fa-solid fa-chevron-up arrow-icon"></i>
+         </div> 
+        </button>
+        
+
+        <div id="saldo-content" class="collapsible-content">
+        <p id="balance" class="balance-value">R$103,92</p>
+        </div>
+        </div>
+
+        <div id="contract" class="card">
           <h2>Contrato 8232327</h2>
           <p>Avenida Lorem Ipsum, 777.</p>
         </div>
 
-        <div id="updates">
-          <h1>Atualizações</h1>
-          <i class="fa-solid fa-chevron-down"></i>
+         <div id="updates" class="collapsible-card">
+          <button class="card-header-button flex-between w-full" onclick="toggleSection('updates-content', 'updates-arrow')">
+            <h1>Atualizações</h1>
+            <i id="updates-arrow" class="fa-solid fa-chevron-down arrow-icon"></i>
+          </button>
+          <div id="updates-content" class="collapsible-content collapsed content-padding">
+             <p class="update-info text-center">Nenhuma atualização importante no momento.</p>
+          </div>
         </div>
 
-        <section id="be-insights" class="dropdown">
-          <div class="dropdown-header">
+        <section id="be-insights" class="collapsible-card">
+          <button class="card-header-button flex-between w-full" onclick="toggleSection('assistant-content' , 'assistant-arrow')">
             <h2>Assistencia da Bê</h2>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
+            <i id="assistant-arrow" class="fa-solid fa-chevron-down arrow-icon"> </i>
+          </button>
 
-          <div class="be-avatar">
-            <img src="./assets/images/avatar.png" alt="Bê" />
-          </div>
-
-          <ul id="insights-list" class="dropdown-content"></ul>
-          <a href="./vermais.html" id="see-more">Ver mais dicas</a>
-        </section>
-      </section>
-
-      <section id="mid-section">
-        <h1 class="section-header">Acesso rápido</h1>
-
-        <div id="quick-cards">
-          <div class="card">
-            <i class="fa-solid fa-globe"></i>
-            <p>Upgrade de plano</p>
-          </div>
-
-          <div class="card">
-            <i class="fa-solid fa-border-all"></i>
-            <p>Contratar Serviços</p>
-          </div>
-
-          <div class="card">
-            <i class="fa-solid fa-file-invoice-dollar"></i>
-            <p>Negociar débitos</p>
-          </div>
-        </div>
-
-        <div id="invoices">
-          <h1 class="section-header">Meu Saldo</h1>
-
-          <div class="invoice-card">
-            <div class="invoice-info">
-              <span class="status">Saldo Insuficiente</span>
-              <span id="balance">R$ 250,00</span>
-              <span id="due-date">Atualizado: há 12 segundos.</span>
+          <div id="assistant-content" class="collapsible-content collapsed content-padding">
+            <div class="be-avatar-container">
+              <img src="assets/images/avatar.jpeg" alt="Bê" class="be-avatar-img" />
             </div>
 
-            <button class="pay-button">
-              <i class="fa-solid fa-money-bill"></i>
-              Pagar agora
-            </button>
+            <div id="insights-list" class="suggestions-container">
+              <div class="chat-bubble">
+                Notei que o pagamento do aluguel de R$1200,00 está chegando e seu saldo atual é de R$103,92. Quer priorizar esse pagamento?
+              </div>
+
+              <div class="chat-bubble">
+              A academia custa R$90. Pausar um mês pode aliviar as contas.
+              </div>
+
+              <div class="chat-bubble last bubble" >
+              Seus gastos com restaurante somam R$200. Que tal ajustar para caber no orçamento?
+              </div>
+
+              <a href="vermais.html" id="see-more" class="see-more-link"> Ver mais</a>
+            </div>
           </div>
-        </div>
-      </section>
+          </section>
     </main>
 
-    <footer>
-      <nav class="footer-nav">
+   <nav id="mobile-footer-nav">
         <a href="#" class="nav-item active">
-          <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-house"></i>
         </a>
-
         <a href="#" class="nav-item">
-          <i class="fa-solid fa-file-invoice-dollar"></i>
+            <i class="fa-solid fa-file-invoice-dollar"></i>
         </a>
-
         <a href="#" class="nav-item">
-          <i class="fa-solid fa-headphones"></i>
+            <i class="fa-solid fa-headphones"></i>
         </a>
-
         <a href="#" class="nav-item">
-          <i class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-ellipsis"></i>
         </a>
-      </nav>
-    </footer>
+    </nav>
     <script src="script.js"></script>
   </body>
 </html>
