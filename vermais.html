@@ -9,10 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-   <link rel="shortcut icon" href="assets/images/icon.jpeg" type="image/jpeg">
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon.jpeg"
+      type="image/jpeg"
+    />
 
     <script
       src="https://kit.fontawesome.com/d3fb1e03fb.js"
@@ -21,6 +25,16 @@
     <title>Assistência da Bê</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="menu">
+            <img src="./assets/images/logo.png" alt="Logo" id="logo-bemobi" />
+          </div>
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </ul>
+      </nav>
+    </header>
 
     <header id="be-header">
       <nav class="vermais-nav">
@@ -31,61 +45,69 @@
       </nav>
     </header>
 
-  
     <main>
       <section id="top-be-section">
         <div class="welcome-card card">
-            <div class="welcome-text">
-                <h1>Oi, Caio!</h1>
-                <h2>Vamos pra análise dessa semana?</h2>
-            </div>
-            <img src="assets/images/avatar2.png" alt="Bê avatar" class="be-avatar-img-large" />
+          <div class="welcome-text">
+            <h1>Oi, Caio!</h1>
+            <h2>Vamos pra análise dessa semana?</h2>
+          </div>
+          <img
+            src="assets/images/avatar2.png"
+            alt="Bê avatar"
+            class="be-avatar-img-large"
+          />
         </div>
       </section>
 
       <section id="suggestions-section">
-    
         <div id="insights-list-expanded" class="suggestions-container-expanded">
-       
-            <div class="expanded-bubble">
-                Sua conta de energia vence amanhã e o saldo não cobre totalmente. Que tal transferir agora?
-            </div>
-          
-            <div class="expanded-bubble">
-                Fique de olho: há risco de débito recusado na próxima cobrança!
-            </div>
-           
-            <div class="expanded-bubble">
-                Que tal cortar a academia (R$90) esse mês?
-            </div>
-           
-            <div class="expanded-bubble">
-                Previsão de instabilidade: pode faltar R$20 para o pagamento da Netflix nesta semana.
-            </div>
-          
-            <div class="expanded-bubble">
-                Sua conta de energia vence amanhã e o saldo não cobre totalmente. Que tal transferir agora?
-            </div>
-            
+          <div class="expanded-bubble">
+            Sua conta de energia vence amanhã e o saldo não cobre totalmente.
+            Que tal transferir agora?
+          </div>
+
+          <div class="expanded-bubble">
+            Fique de olho: há risco de débito recusado na próxima cobrança!
+          </div>
+
+          <div class="expanded-bubble">
+            Que tal cortar a academia (R$90) esse mês?
+          </div>
+
+          <div class="expanded-bubble">
+            Previsão de instabilidade: pode faltar R$20 para o pagamento da
+            Netflix nesta semana.
+          </div>
+
+          <div class="expanded-bubble">
+            Sua conta de água vence de R$85 vence em 2 dias. Seu saldo já cobre,
+            pode pagar sem preocupações!
+          </div>
+
+          <div class="expanded-bubble">
+            Nos últimos 7 dias, você gastou R$60 a mais com transporte. Vale a
+            pena ajustar essa rota?
+          </div>
         </div>
       </section>
+    </main>
 
-
-         <nav id="mobile-footer-nav">
-        <a href="#" class="nav-item active">
-            <i class="fa-solid fa-house"></i>
-        </a>
-        <a href="#" class="nav-item">
-            <i class="fa-solid fa-file-invoice-dollar"></i>
-        </a>
-        <a href="#" class="nav-item">
-            <i class="fa-solid fa-headphones"></i>
-        </a>
-        <a href="#" class="nav-item">
-            <i class="fa-solid fa-ellipsis"></i>
-        </a>
+    <nav id="mobile-footer-nav">
+      <a href="#" class="nav-item active">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fa-solid fa-file-invoice-dollar"></i>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fa-solid fa-headphones"></i>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fa-solid fa-ellipsis"></i>
+      </a>
     </nav>
-  
+
     <script src="script.js"></script>
   </body>
 </html>
