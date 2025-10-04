@@ -43,17 +43,17 @@ O backend do projeto **Bê da Bemobi** é responsável por fornecer os dados, re
 
 Você pode visualizar a aplicação em funcionamento através do seguinte link:
 
-[Deploy](https://caiorossi00.github.io/Bemobi-Hackaton-frontend/)
+[Deploy](https://bemobi-hackaton-frontend.vercel.app/)
 
 ### Página Home
 
 <p align="center">
-  <img src="https://github.com/Caiorossi00/Bemobi-Hackaton-frontend/blob/main/assets/images/UI.png?raw=true" alt="Frontend Preview" width="600"/>
+<img src="https://github.com/mayaramarrtins/Bemobi-Hackaton-frontend/blob/main/assets/images/2%20-%20Home%20Open.png" alt="Frontend Preview" width="600"/>
 </p>
 
 ### Página Assistência da Bê
 
 <p align="center">
-  <img src="https://github.com/Caiorossi00/Bemobi-Hackaton-frontend/blob/main/assets/images/UI-2.png?raw=true" alt="Assistência da Bê" width="600"/>
+  <img src="https://github.com/mayaramarrtins/Bemobi-Hackaton-frontend/blob/main/assets/images/3%20-%20Assist%C3%AAncia%20da%20B%C3%AA.png" alt="Assistência da Bê" width="600"/>
 </p>
 
